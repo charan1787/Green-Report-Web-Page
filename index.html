@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+        integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Charan work</title>
+</head>
+<body>
+    <div class="container column is-half">
+        
+        <p class="title">Enter the Values for the Fields </p>
+        <div class="field" style="display: none;">
+            <label class="label">Tree</label>
+            <div class="control">
+                <input id = "tree" class="input" type="text" placeholder="Enter the Value" value="Main">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">AirCraft MOV(1000s)</label>
+            <div class="control">
+                <input id= "aircraftmov"class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Pass. Flights (1000's)</label>
+            <div class="control">
+                <input id="passflights" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Cargo Flights (1000's)</label>
+            <div class="control">
+                <input id="cargoflights" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Pass. Numbers (M)</label>
+            <div class="control">
+                <input id="passnumbers" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Cargo Tons (M)</label>
+            <div class="control">
+                <input id="cargotons" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Energy Usage (MkWh)</label>
+            <div class="control">
+                <input id="energyusage" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">EU per pax. (kWh)</label>
+            <div class="control">
+                <input id="euperpax" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Water Usage (M m³)</label>
+            <div class="control">
+                <input id="waterusage" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Water Savings (1000 m³)</label>
+            <div class="control">
+                <input id="watersavings" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">WW Gen. (M m³)</label>
+            <div class="control">
+                <input id="wwgen" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">WW Recycl. (1000 m³)</label>
+            <div class="control">
+                <input id="wwrecycl" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Sol. Wst. Gen. (1000 T)</label>
+            <div class="control">
+                <input id="solwstgen" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Sol. Wst. per pax. (kg)</label>
+            <div class="control">
+                <input id="solwstperpax" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Wst. Recycl. Rate (%)</label>
+            <div class="control">
+                <input id="wstrecyclrate" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Haz. Wst. Gen. (T)</label>
+            <div class="control">
+                <input id="hazwstgen" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">S 1 Emission (1000 tCO2e)</label>
+            <div class="control">
+                <input id="s1emission" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">S 2 Emission (1000 tCO2e)</label>
+            <div class="control">
+                <input id="s2emission" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">S 1 & 2 Combined Emission (1000 tCO2e)</label>
+            <div class="control">
+                <input id="s1ands2" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">S 3 Emission (1000 tCO2e)</label>
+            <div class="control">
+                <input id="s3emission" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Carbon Emis. per pax. (kg)</label>
+            <div class="control">
+                <input id="carbonemisperpax" class="input" type="number" placeholder="Enter the Value">
+            </div>
+        </div>
+
+
+        <div class="control">
+            <button id="btn" class="button is-primary">Submit</button>
+        </div>
+    </div>
+
+    <section style="visibility: hidden;">
+        <div class="container column is-2">
+            <p class="title" id="result">This is label 5</p>
+
+        </div>
+    </section>
+
+    
+</body>
+    <script src="index.js"></script>
+</html>
